@@ -4,6 +4,12 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
+
+    "cucumberautocomplete.steps": ["src/test/java/steps/*.java"],
+    "cucumberautocomplete.syncfeatures": "test/features/*.feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.strictGherkinValidation": true,
+
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.debug.settings.onBuildFailureProceed": true,
     "java.compile.nullAnalysis.mode": "automatic"
