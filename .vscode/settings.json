@@ -5,8 +5,7 @@
         "lib/**/*.jar"
     ],
 
-    "cucumberautocomplete.steps": ["src/test/java/steps/*.java"],
-    "cucumberautocomplete.syncfeatures": "test/features/*.feature",
+    
     "cucumberautocomplete.strictGherkinCompletion": true,
     "cucumberautocomplete.strictGherkinValidation": true,
 

@@ -74,4 +74,28 @@ public class BasePage {
     public void rightClick(String locator){
         action.contextClick(find(locator));
     }
+
+    /*Acceso a tablas*/
+    public String getValueFromTable(String locator, int row, int column){
+        String cellINeed = locator+"/table/tbody/tr["+row+"]/td["+column+"]";
+        return find(cellINeed).getText();
+    }
+    
+    public void setValueOnTable(String locator, int row, int column, String stringToSend){
+        String cellToFill = locator+"/table/tbody/tr["+row+"]/td["+column+"]";
+        find(cellToFill).sendKeys(stringToSend);
+    }
+
+    /*Manejo Iframe y pop ups */
+    public void switchToiFrame(int iFrameIndex){
+        driver.switchTo().frame(iFrameIndex)
+    }
+
+    public void switchToParentFrame(){
+        driver.switchTo().parentFrame();
+    }
+
+    public void dismissAlert(){
+        driver.switchTo().alert().dismiss();
+    }
 }

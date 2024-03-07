@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class search criteria in Google</title>
+<title>Test results - Class Test different actions on a sandbox page</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>Class search criteria in Google</h1>
+<h1>Class Test different actions on a sandbox page</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/default-package.html">default-package</a> &gt; search criteria in Google</div>
+<a href="../packages/default-package.html">default-package</a> &gt; Test different actions on a sandbox page</div>
 <div id="summary">
 <table>
 <tr>
@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.061s</div>
+<div class="counter">0.006s</div>
 <p>duration</p>
 </div>
 </td>
@@ -70,29 +70,40 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="as a user I enter a search criteria in Google"></a>
-<h3 class="failures">as a user I enter a search criteria in Google</h3>
+<a name="As a Test Engineer, I try out different actions on a sandbox page"></a>
+<h3 class="failures">As a Test Engineer, I try out different actions on a sandbox page</h3>
 <span class="code">
-<pre>io.cucumber.junit.UndefinedStepException: The step 'I am in the Google search page' and 3 other step(s) are undefined.
+<pre>io.cucumber.junit.UndefinedStepException: The step 'I navigate to the sandbox page' and 1 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given(&quot;I am in the Google search page&quot;)
-public void i_am_in_the_google_search_page() {
+@Given(&quot;I navigate to the sandbox page&quot;)
+public void i_navigate_to_the_sandbox_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;I enter a search criteria&quot;)
-public void i_enter_a_search_criteria() {
+@Given(&quot;select a value from the dropdown&quot;)
+public void select_a_value_from_the_dropdown() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;click on the search button&quot;)
-public void click_on_the_search_button() {
+
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="As a Test Engineer, I want to retrieve the value of an static table"></a>
+<h3 class="failures">As a Test Engineer, I want to retrieve the value of an static table</h3>
+<span class="code">
+<pre>io.cucumber.junit.UndefinedStepException: The step 'I navigate to the static table' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I navigate to the static table&quot;)
+public void i_navigate_to_the_static_table() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Then(&quot;the results match the criteria&quot;)
-public void the_results_match_the_criteria() {
+@Then(&quot;I can return the value I wanted&quot;)
+public void i_can_return_the_value_i_wanted() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
@@ -112,8 +123,13 @@ public void the_results_match_the_criteria() {
 </tr>
 </thead>
 <tr>
-<td class="failures">as a user I enter a search criteria in Google</td>
-<td class="failures">0.061s</td>
+<td class="failures">As a Test Engineer, I try out different actions on a sandbox page</td>
+<td class="failures">0.003s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">As a Test Engineer, I want to retrieve the value of an static table</td>
+<td class="failures">0.003s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
