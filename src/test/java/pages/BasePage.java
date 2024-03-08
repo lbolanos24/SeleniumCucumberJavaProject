@@ -88,7 +88,7 @@ public class BasePage {
 
     /*Manejo Iframe y pop ups */
     public void switchToiFrame(int iFrameIndex){
-        driver.switchTo().frame(iFrameIndex)
+        driver.switchTo().frame(iFrameIndex);
     }
 
     public void switchToParentFrame(){
@@ -97,5 +97,10 @@ public class BasePage {
 
     public void dismissAlert(){
         driver.switchTo().alert().dismiss();
+    }
+
+    /*Comienzo de aserciones */
+    public String textFromElemeny (String locator){
+        return find(locator).getText();
     }
 }
