@@ -23,7 +23,7 @@ public class GooglePage extends BasePage {
     }
 
     public String firstResult(){
-        return textFromElemeny(firstResult);
+        return textFromElement(firstResult);
     }
 
 }
