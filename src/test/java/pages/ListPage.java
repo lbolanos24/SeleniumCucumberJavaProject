@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 
 public class ListPage extends BasePage{
     
-    private String searchField = "//body/form[1]/input[1]";
+    private String searchField = "//li[normalize-space()='Filter for a city']";//"//body/form[1]/input[1]";
     private String SearchResults = "name";
        
     public ListPage(){
@@ -20,10 +20,10 @@ public class ListPage extends BasePage{
         navigateTo("https://codepen.io/lindakovacs/full/gZBWPe");
     }//-    https://andreidbr.github.oi/JS30/06AjaxTypeAhead/index.html
 
-    public void enterSearchCriteria() throws InterruptedException{
+    public void enterSearchCriteria(String state) throws InterruptedException{
         try{
             Thread.sleep(600);
-            write(searchField, "Washington");
+            write(searchField, state);
         }catch(NoSuchElementException e){
             System.out.println("The WebElement Search Field couldn't be found");
             e.printStackTrace();
